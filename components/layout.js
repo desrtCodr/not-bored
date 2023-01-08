@@ -11,6 +11,7 @@ export default function Layout({ children }) {
           name="Ian Mitchard's Website"
           content='Forever Learning'
         />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata" />
       </Head>
       <Container>
         <Navbar />
