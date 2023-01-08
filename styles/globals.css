@@ -3,12 +3,7 @@ body {
   background: rgb(254, 253, 253);
   margin: 1em auto 2em;
 }
-font {
-  font: 'roboto';
-}
-font-color {
-  color: rgb(0, 110, 255);
-}
+
 .main {
   display: flex;
   align-items: center;

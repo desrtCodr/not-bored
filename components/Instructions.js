@@ -6,12 +6,18 @@ import Typography from '@mui/material/Typography';
 
 const card = (
   <React.Fragment>
-    <CardContent>
-      <Typography variant='h5' component='div'>
-        The app that helps you find something to do
-      </Typography>
+    <CardContent
+      sx={{
+        fontFamily: 'monospace',
+        fontWeight: 700,
+        letterSpacing: '.3rem',
+        color: 'inherit',
+        textDecoration: 'none',
+      }}
+      maxWidth='25%'
+    >
       <Typography variant='body1'>
-        1. Select the type of activity.
+        1. Select the type of activity
       </Typography>
       <Typography variant='body1'>2. Click Find Activity</Typography>
     </CardContent>

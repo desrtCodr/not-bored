@@ -1,3 +1,4 @@
+import { Container } from '@mui/system';
 import Head from 'next/head';
 import Navbar from './navbar';
 
@@ -11,8 +12,10 @@ export default function Layout({ children }) {
           content='Forever Learning'
         />
       </Head>
-      <Navbar />
-      <main>{children}</main>
+      <Container>
+        <Navbar />
+        <main>{children}</main>
+      </Container>
     </>
   );
 }
