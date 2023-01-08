@@ -2,6 +2,7 @@ html,
 body {
   background: rgb(254, 253, 253);
   margin: 1em auto 2em;
+  font-family: Inconsolata;
 }
 
 .main {

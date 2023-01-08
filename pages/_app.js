@@ -1,11 +1,14 @@
 import '../styles/globals.css';
 import Layout from '../components/layout';
-import { Inconsolata } from '@next/font/google';
+import theme from '../styles/theme';
+import { ThemeProvider } from '@mui/material/styles';
 
 export default function App({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <ThemeProvider theme={theme}>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </ThemeProvider>
   );
 }

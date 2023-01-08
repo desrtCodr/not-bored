@@ -12,6 +12,7 @@ import {
 import fetchActivity from './api/api';
 import Type from '../components/Type';
 import { Box } from '@mui/system';
+import SEO from '../components/seo';
 
 const url = 'https://www.boredapi.com/api/activity';
 
@@ -43,6 +44,7 @@ export default function Home() {
 
   return (
     <>
+      <SEO pageTitle='Home' />
       <Grid container spacing={2} paddingTop={2}>
         <Grid item>
           <Instructions />
