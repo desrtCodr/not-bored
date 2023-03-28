@@ -1,58 +1,26 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
-import SelfImprovementIcon from '@mui/icons-material/SelfImprovement';
+import Link from 'next/link';
 
-export default function ButtonAppBar() {
+const path = [
+  { uid: 21, name: ' Home', id: 1, path: '/' },
+  { uid: 31, name: 'Projects', id: 2, path: 'projects/notBored' },
+  { uid: 41, name: 'About', id: 3, path: 'about' },
+];
+export default function Header() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position='static'>
-        <Container maxWidth='xl'>
-          <Toolbar disableGutters>
-            <SelfImprovementIcon
-              sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}
-            />
-            <Typography
-              flexGrow={1}
-              variant='h6'
-              noWrap
-              component='a'
-              href='/'
-              sx={{
-                mr: 2,
-                display: { xs: 'none', md: 'flex' },
-                fontFamily: 'monospace',
-                fontWeight: 700,
-                letterSpacing: '.3rem',
-                color: 'inherit',
-                textDecoration: 'none',
-              }}
-            >
-              !Bored
-            </Typography>
-            <Typography
-              variant='h6'
-              noWrap
-              component='a'
-              href='/about'
-              sx={{
-                mr: 2,
-                display: { xs: 'none', md: 'flex' },
-                fontFamily: 'monospace',
-                fontWeight: 700,
-                letterSpacing: '.3rem',
-                color: 'inherit',
-                textDecoration: 'none',
-              }}
-            >
-              About Me
-            </Typography>
-          </Toolbar>
-        </Container>
-      </AppBar>
-    </Box>
+    <header>
+      <nav>
+        <ul>
+          {path.map((value) => {
+            return (
+              <li key={value.uid}>
+                <Link href={value.path}>
+                  <a> {value.name} </a>
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
+    </header>
   );
 }

@@ -1,11 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  --grey: rgb(100, 100, 100);
-  --blue: rgb(0, 147, 220);
+  --grey: #94a3b8;
+  --blue: #dbeafe;
 }
 
 html,
 body {
-  background: rgb(254, 253, 253);
+  background: #fafaf9;
   margin: 1em auto 2em;
 }
 
