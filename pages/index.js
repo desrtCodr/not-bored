@@ -5,13 +5,11 @@ import {
   Grid,
   Button,
   Typography,
-  Container,
   CardActionArea,
   CardContent,
 } from '@mui/material';
 import fetchActivity from './api/api';
 import Type from '../components/Type';
-import { Box } from '@mui/system';
 
 const url = 'https://www.boredapi.com/api/activity';
 
@@ -43,7 +41,7 @@ export default function Home() {
 
   return (
     <>
-      <Grid container spacing={2} paddingTop={2}>
+      <div className='main'>
         <Grid item>
           <Instructions />
         </Grid>
@@ -81,7 +79,7 @@ export default function Home() {
             </CardActionArea>
           </Card>
         </Grid>
-      </Grid>
+      </div>
     </>
   );
 }

@@ -7,7 +7,7 @@ import { Card, CardContent } from '@mui/material';
 
 const types = [
   'education',
-  'recreation',
+  'recreational',
   'social',
   'diy',
   'charity',
