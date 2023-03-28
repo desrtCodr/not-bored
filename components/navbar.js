@@ -8,14 +8,12 @@ const path = [
 export default function Header() {
   return (
     <header>
-      <nav>
+      <nav className='container'>
         <ul>
           {path.map((value) => {
             return (
               <li key={value.uid}>
-                <Link href={value.path}>
-                  <a> {value.name} </a>
-                </Link>
+                <Link href={value.path}>{value.name}</Link>
               </li>
             );
           })}

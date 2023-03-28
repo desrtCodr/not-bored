@@ -1,12 +1,11 @@
-import { Box, Typography } from '@mui/material';
-import { Container } from '@mui/system';
+import { Typography } from '@mui/material';
 
 export default function Home() {
   return (
-    <Box>
-      <Container>
-        <Typography>Hi my name is Ian!</Typography>
-      </Container>
-    </Box>
+    <div className='container'>
+      <div className='main'>
+        <Typography>Home Page!</Typography>
+      </div>
+    </div>
   );
 }

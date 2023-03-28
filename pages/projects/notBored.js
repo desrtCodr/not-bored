@@ -13,7 +13,7 @@ import Type from '../../components/Type';
 
 const url = 'https://www.boredapi.com/api/activity';
 
-export default function Home() {
+export default function NotBored() {
   const [type, setType] = React.useState('');
   const [activity, setActivity] = React.useState(null);
   const [error, setError] = React.useState(null);
